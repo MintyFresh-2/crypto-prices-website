@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="title-bar">
+      <h1>Crypto Prices</h1>
+      <select id="currency-selection">
+        <option selected>USD</option>
+        <option>GBP</option>
+        <option>EUR</option>
+        <option>JPY</option>
+      </select>
+    </div>
+    <div id="coins-grid">
+      <div id="bitcoin-section" class="coin-section">
+        <h2>Bitcoin</h2>
+        <canvas id="bitcoin-chart" class="chart"></canvas>
+        <p id="bitcoin-price">$3000</p>
+      </div>
+      <div id="ethereum-section" class="coin-section">
+        <h2>Ether</h2>
+        <canvas id="ethereum-chart" class="chart"></canvas>
+        <p id="ethereum-price">$3000</p>
+      </div>
+      <div id="dogecoin-section" class="coin-section">
+        <h2>Dogecoin</h2>
+        <canvas id="dogecoin-chart" class="chart"></canvas>
+        <p id="dogecoin-price">$3000</p>
+      </div>
+      <div id="cardano-section" class="coin-section">
+        <h2>Cardano</h2>
+        <canvas id="cardano-chart" class="chart"></canvas>
+        <p id="cardano-price">$3000</p>
+      </div>
+    </div>
+    <script src="chart-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
